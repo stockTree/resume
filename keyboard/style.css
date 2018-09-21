@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background:grey url(index.jpg) no-repeat center center;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+kbd{
+    border: 1px red solid;
+    width: 4em;
+    height: 4em;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+}
+kbd > button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+kbd:hover > button{
+    display: inline-block;
+}
+.wrapper div:nth-child(2){
+    margin-left: 1em;
+}
+.wrapper div:nth-child(3){
+    margin-left: 1em;
+}
+.wrapper {
+    background-color: rgba(255, 255, 255, .2)
+}
+main{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#zhangsan{
+    display: inline-block;
+}
+kbd{
+    color:#c5c5c5;
+    border: 0;
+    width:50px;
+    height: 40px;
+    background: linear-gradient(to bottom,#292929 0%,#111111 100%);
+border: 1px solid #373737;
+border-radius: 5px;
+box-shadow: 0 0 0 1px #1a1b1c,0 0 0 2px #1f2020,0 2px 0 1px #000000;
+/* display: inline-flex;
+align-items: center;
+justify-content: center; */
+font-size: 18px;
+margin:0px 10px;
+font-family:Helvetica;
+position: relative;
+}
+kbd >.text{
+    position: absolute;
+    left: 4px;
+    top:0px;
+}
+kbd > img{
+    width: 16px;
+    position: absolute;
+    left: 4px;
+    bottom: 2px;
+}
+.row{
+margin: 20px
+}
