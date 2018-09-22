@@ -1,25 +1,30 @@
 -function(){
-var liList = document.querySelectorAll('#topNavBar>nav>ul>li')
+    var view = document.querySelector('nav.menu')
+    var controller = {
+        view:null,
+        init(view) {
+            this.view = view
+            var liList =this.view.querySelectorAll('nav.menu>ul>li')
 for(var i= 0;i<liList.length;i++){
     liList[i].onmouseenter=function(x){
- c=x.target
-c.classList.add('active')
-b=c.getElementsByTagName('ul')[0]
-if(b !=undefined){
-    b.classList.add('active')
-}
+        c=x.target
+        c.classList.add('active')
+        b=c.getElementsByTagName('ul')[0]
+        if(b !=undefined){
+        b.classList.add('active')
     }
-liList[i].onmouseleave=function(x){
+        }
+    liList[i].onmouseleave=function(x){
 // var c=x.target
-c.classList.remove('active')
- b=c.getElementsByTagName('ul')[0]
-if(b !=undefined){
+    c.classList.remove('active')
+    b=c.getElementsByTagName('ul')[0]
+    if(b !=undefined){
     b.classList.remove('active')
-}
-}	
-}
+        }
+    }	
+    }
 
-let aItems = document.querySelectorAll('#topNavBar>nav>ul>li>a')
+let aItems = view.querySelectorAll('nav.menu>ul>li>a')
 
 for(let a=0;a<aItems.length;a++){
     
@@ -50,5 +55,10 @@ for(let a=0;a<aItems.length;a++){
         .start(); 
         
     }
+        }
+    }
+
+
 }
+controller.init(view)
 }.call()
