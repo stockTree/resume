@@ -260,7 +260,8 @@ section.portfolio{
 	color: #000;
 }
 section.skills > h2,
-section.portfolio > h2{
+section.portfolio > h2,
+.message>h2{
 	text-align: center;
 	color: #3d4451;
 	font-size: 28px;
@@ -335,4 +336,18 @@ section.portfolio .swiper-container {
 	vertical-align: -0.15em;
 	fill: currentColor;
 	overflow: hidden;
+}
+section.message>ol{
+	max-width:700px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ddd; 
+	
+}
+section.message>ol>li{
+	color: #000;
+	padding: 16px;
+	border-top: 1px solid #ddd;
+}
+section.message>form{
+	color: #000;
 }
